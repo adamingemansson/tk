@@ -77,8 +77,8 @@ Open `AVCV.py` and adjust the following. Example:
 - Detection overlays for detection plotting, enter your **file, name, and color**:
   ```python
   DETECTION_CONFIG = [
-      {"file": "detections_CME.csv", "name": "CME", "color": "blue"},
-      {"file": "detections_Dino.csv", "name": "Dino", "color": "red"},
+      {"name": "CME", "file": "detections_CME.csv", "color": "blue"},
+      {"name": "Dino", "file": "detections_Dino.csv", "color": "red"},
   ]
   ```
 - Channel configuration (image data), enter your **channel folders and colors**
