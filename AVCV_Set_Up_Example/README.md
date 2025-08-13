@@ -98,15 +98,15 @@ Open `AVCV.py` and adjust the following. Example:
 ### Tracking CSVs (used by `Comparison.py` and Tracking mode)
 Assumed **column order** (headers required):
 1. `ID`
-2. `t0` (track starting time point)
-3. `t` (frame/time index)
+2. `t0`  (track starting time point)
+3. `t`  (frame/time index)
 4. `x`
 5. `y`
 6. `z`
-7. `FI` (Fluorescence Intensity)
-8. `TL` (Track Length
+7. `FI`  (Fluorescence Intensity)
+8. `TL`  (Track Length)
 
-You can compare a **base** table (e.g., `CME_tracks.csv`) to a **secondary** table (e.g., `Dino.csv`). Matching is done by **same `t`** and **nearest 3D neighbor** (x,y,z(.
+You can compare a **base** table (e.g., `CME_tracks.csv`) to a **secondary** table (e.g., `Dino.csv`). Matching is done by **same `t`** and **nearest 3D neighbor** (x,y,z).
 
 ### Detection CSVs
 A simple list of detection points per frame. Typical columns:
