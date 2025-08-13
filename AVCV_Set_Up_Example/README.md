@@ -21,12 +21,6 @@ An interactive viewer for multi‑channel time series microscopy data (with opti
 
 Install (recommended in a virtual environment):
 
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-
 pip install numpy pandas matplotlib tifffile imagecodecs
 ```
 
