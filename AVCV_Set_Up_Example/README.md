@@ -58,16 +58,17 @@ work/
 
 ## 3) Quick edits in `AVCV.py` (channel setup)
 
-Open `AVCV.py` and set your **channel folders and colors** in `CHANNEL_CONFIG`. Example:
+Open `AVCV.py` and adjust the following. Example:
 
-```python
-CHANNEL_CONFIG = [
-    {"name": "Ch1", "path": r"work/Channel_1", "color": "red"},
-    {"name": "Ch2", "path": r"work/Channel_2", "color": "green"},
-]
-# Optional x-offset (pixels) to align channels horizontally
-CHANNEL_OFFSET = 0
-```
+- Channel configuration (image data), enter your **channel folders and colors** in `CHANNEL_CONFIG`:
+  ```python
+  CHANNEL_CONFIG = [
+      {"name": "Ch1", "path": r"work/Channel_1", "color": "red"},
+      {"name": "Ch2", "path": r"work/Channel_2", "color": "green"},
+  ]
+  # Optional x-offset (pixels) to align channels horizontally
+  CHANNEL_OFFSET = 0
+  ```
 
 - Base (tracking) files shown in Tracking mode:
   ```python
