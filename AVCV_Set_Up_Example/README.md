@@ -60,28 +60,28 @@ work/
 
 Open `AVCV.py` and adjust the following. Example:
 
-- Base (tracking) files shown in Tracking mode, enter your **file and name**:
+- Base (tracking) files shown in Tracking mode, enter **name and file**:
   ```python
   BASE_FILES = [
       {"name": "CME", "file": "CME_tracks.csv"},
       {"name": "Dino", "file": "Dino_tracks.csv"},
   ]
   ```
-- Secondary CSVs used for comparison, enter your **file and name**:
+- Secondary CSVs used for comparison, enter **name and file**:
   ```python
   SEC_FILES = [
       {"name": "Dino", "file": "Dino_tracks.csv"},
       {"name": "CME", "file": "CME_tracks.csv"},
   ]
   ```
-- Detection overlays for detection plotting, enter your **file, name, and color**:
+- Detection overlays for detection plotting, enter **name, file, and color**:
   ```python
   DETECTION_CONFIG = [
       {"name": "CME", "file": "detections_CME.csv", "color": "blue"},
       {"name": "Dino", "file": "detections_Dino.csv", "color": "red"},
   ]
   ```
-- Channel configuration (image data), enter your **channel folders and colors**
+- Channel configuration (image data), enter **channel folder name, file,  and color**
   ```python
   CHANNEL_CONFIG = [
       {"name": "Ch1", "path": r"work/Channel_1", "color": "red"},
