@@ -34,14 +34,14 @@ ROOT_DIR = "/Users/adamingemansson/presentation_250812/"
 
 # File paths to Base Dataset or Comparison file
 BASE_FILES = [
-    {"file": "CME_tracks.csv", "name": "CME"},
-    {"file": "Dino_tracks.csv", "name": "Dino"},
+    {"name": "CME", "file": "CME_tracks.csv"},
+    {"name": "Dino", "file": "Dino_tracks.csv"},
 ]
 
 # Configuration for the datasets to compare. IGNORE if comparison is not needed
 SEC_FILES = [
-    {"file": "Dino_tracks.csv", "name": "Dino"},
-    {"file": "CME_tracks.csv", "name": "CME"}
+    {"name": "Dino", "file": "Dino_tracks.csv"},
+    {"name": "CME", "file": "CME_tracks.csv"}
 ]
 
 # Detection configuration

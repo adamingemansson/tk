@@ -60,7 +60,28 @@ work/
 
 Open `AVCV.py` and adjust the following. Example:
 
-- Channel configuration (image data), enter your **channel folders and colors** in `CHANNEL_CONFIG`:
+- Base (tracking) files shown in Tracking mode, enter your **file and name**:
+  ```python
+  BASE_FILES = [
+      {"name": "CME", "file": "CME_tracks.csv"},
+      {"name": "Dino", "file": "Dino_tracks.csv"},
+  ]
+  ```
+- Secondary CSVs used for comparison, enter your **file and name**:
+  ```python
+  SEC_FILES = [
+      {"name": "Dino", "file": "Dino_tracks.csv"},
+      {"name": "CME", "file": "CME_tracks.csv"},
+  ]
+  ```
+- Detection overlays for detection plotting, enter your **file, name, and color**:
+  ```python
+  DETECTION_CONFIG = [
+      {"file": "detections_CME.csv", "name": "CME", "color": "blue"},
+      {"file": "detections_Dino.csv", "name": "Dino", "color": "red"},
+  ]
+  ```
+- Channel configuration (image data), enter your **channel folders and colors**
   ```python
   CHANNEL_CONFIG = [
       {"name": "Ch1", "path": r"work/Channel_1", "color": "red"},
@@ -68,28 +89,6 @@ Open `AVCV.py` and adjust the following. Example:
   ]
   # Optional x-offset (pixels) to align channels horizontally
   CHANNEL_OFFSET = 0
-  ```
-
-- Base (tracking) files shown in Tracking mode:
-  ```python
-  BASE_FILES = [
-      {"file": "CME_tracks.csv", "name": "CME"},
-      {"file": "Dino_tracks.csv", "name": "Dino"},
-  ]
-  ```
-- Secondary CSVs used for comparison:
-  ```python
-  SEC_FILES = [
-      {"file": "Dino_tracks.csv", "name": "Dino"},
-      {"file": "CME_tracks.csv", "name": "CME"},
-  ]
-  ```
-- Detection overlays:
-  ```python
-  DETECTION_CONFIG = [
-      {"name": "CME",  "file": "detections_CME.csv",  "color": "blue"},
-      {"name": "Dino", "file": "detections_Dino.csv", "color": "red"},
-  ]
   ```
 
 ---
