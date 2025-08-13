@@ -18,6 +18,7 @@ An interactive viewer for multi‑channel time series microscopy data (with opti
   - `pandas`
   - `matplotlib`
   - `tifffile`
+  - `imagecodecs`
 
 Install (recommended in a virtual environment):
 
