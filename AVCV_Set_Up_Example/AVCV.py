@@ -40,8 +40,8 @@ BASE_FILES = [
 
 # Configuration for the datasets to compare. IGNORE if comparison is not needed
 SEC_FILES = [
-    {"file": "Dino.csv", "name": "Dino"},
-    {"file": "CME.csv", "name": "CME"}
+    {"file": "Dino_tracks.csv", "name": "Dino"},
+    {"file": "CME_tracks.csv", "name": "CME"}
 ]
 
 # Detection configuration
@@ -2156,9 +2156,9 @@ def select_id_at(event):
 # === Final Initialization and Event Loop ===
 
 # Final initialization steps
-"""create_channel_patch_axes()
+create_channel_patch_axes()
 if state.has_tracking and state.current_id is not None:
     update_view_center()
 
 update_plot()
-plt.show()"""
+plt.show()
