@@ -23,7 +23,6 @@ An interactive viewer for multi‑channel time series microscopy data (with opti
 Install (recommended in a virtual environment):
 
 `pip install numpy pandas matplotlib tifffile imagecodecs`
-```
 
 ---
 
